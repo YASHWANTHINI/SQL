@@ -25,12 +25,13 @@ select distinct(city) from station where city REGEXP '[aeiou]$';
 
 select distinct(city) from station where lower(substr(city,length(city),length(city))) in ('a','e','i','o','u');
 
-syntax-------------------------------
+syntax :
 Extract a substring from a string   (start at position 5, extract 3 characters):
 
 SELECT SUBSTR("SQL Tutorial", 5, 3) AS ExtractString;
+
 if lower / upper before substring it denotes cases (lowercase/uppercase)
--------------------------------------
+
 
 6) Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates.
 
